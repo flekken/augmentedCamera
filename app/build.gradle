@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "com.vaszildm.cameratest"
         minSdkVersion 11
-        targetSdkVersion 22
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0"
     }
@@ -20,6 +20,5 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.1.1'
 }
