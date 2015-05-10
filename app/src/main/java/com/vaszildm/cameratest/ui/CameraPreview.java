@@ -15,14 +15,13 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
     private SurfaceHolder mSurfaceHolder;
     private Camera mCamera;
 
-    public CameraPreview(Context context, Camera camera) {
+    public CameraPreview(Context context, Camera camera, SurfaceView surfaceView) {
         super(context);
         mCamera = camera;
 
-        mSurfaceHolder = getHolder();
+        mSurfaceHolder = surfaceView.getHolder();
         mSurfaceHolder.addCallback(this);
     }
-
 
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
